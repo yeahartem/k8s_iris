@@ -1,0 +1,17 @@
+stages:
+  data_load:
+    cmd: python dataloader.py
+    deps:
+      - dataloader.py
+    outs:
+      - train.csv
+      - test.csv
+
+  train:
+    cmd: python train_model.py
+    deps:
+      - train_model.py
+      - train.csv
+      - test.csv
+    outs:
+      - model_weights/model.pkl
