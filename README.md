@@ -17,7 +17,7 @@ docker push artemgalliamov/iris-model-app:latest
 
 ## Для секретов
 ```
-kubectl create secret docker-registry docker-hub-secret --docker-server=https://index.docker.io/v1/ --docker-username=YOUR_DOCKERHUB_USERNAME --docker-password=YOUR_DOCKERHUB_PASSWORD --docker-email=YOUR_EMAIL
+kubectl create secret docker-registry docker-hub-secret \ --docker-server=https://index.docker.io/v1/ \ --docker-username=YOUR_DOCKERHUB_USERNAME \ --docker-password=YOUR_DOCKERHUB_PASSWORD \ --docker-email=YOUR_EMAIL
 ```
 
 ## Всё поднимаем
