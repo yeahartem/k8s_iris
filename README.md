@@ -1,4 +1,4 @@
-# Запуск нода в самом старте: 
+# Запуск нода 
 ```
 minikube start --memory=4096 --cpus=2
 ```
@@ -19,6 +19,8 @@ docker push artemgalliamov/iris-model-app:latest
 ```
 kubectl create secret docker-registry docker-hub-secret --docker-server=https://index.docker.io/v1/ --docker-username=YOUR_DOCKERHUB_USERNAME --docker-password=YOUR_DOCKERHUB_PASSWORD --docker-email=YOUR_EMAIL
 ```
+
+## Всё поднимаем
 ```
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
