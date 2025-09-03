@@ -1,5 +1,5 @@
-pandas
+Flask
+joblib
+numpy
 scikit-learn
 mlflow
-dvc
-apache-airflow

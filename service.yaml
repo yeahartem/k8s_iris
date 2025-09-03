@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: iris-model-app
+  labels:
+    app: iris-model-app
+spec:
+  selector:
+    app: iris-model-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5050
+      name: http
+  type: NodePort
